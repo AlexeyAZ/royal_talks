@@ -1,0 +1,185 @@
+.sec2 {
+    background-image: url("../img/sec2-bg.jpg");
+    padding-top: 60px;
+
+    &__container {
+        margin-bottom: 80px;
+
+        @include media(w768) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__note-wrap {
+        background-color: white;
+        border-radius: 80px;
+        box-shadow: 0 0 80px rgba(0,0,0,0.5);
+        margin-left: -20px;
+        margin-right: -20px;
+        padding: 80px 80px 150px 80px;
+        position: relative;
+
+        @include media(w1024) {
+            border-radius: 20px;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 40px 30px 60px;
+        }
+
+        @include media(w768) {
+            border-radius: 0;
+            margin-left: -18px;
+            margin-right: -18px;
+        }
+
+        &:before {
+
+            @include media(w768) {
+                content: "";
+                transform: translateX(-50%);
+                background-color: white;
+                border-radius: 50%;
+                position: absolute;
+                left: 50%;
+                top: -10px;
+                height: 30px;
+                width: 170px;
+            }
+        }
+    }
+
+    &__note {
+        display: flex;
+
+        @include media(w768) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__note-item {
+
+        &_img {
+            flex-shrink: 0;
+
+            @include media(w768) {
+                order: 1;
+                margin-bottom: 20px;
+            }
+        }
+
+        &_text {
+            flex-shrink: 1;
+
+            @include media(w768) {
+                order: 2;
+                text-align: center;
+            }
+        }
+    }
+
+    &__note-boxes {
+        background-image: url("../img/sec2-boxes.svg");
+        background-position: left center;
+        background-size: 100px;
+        background-repeat: no-repeat;
+        padding-top: 20px;
+        padding-left: 120px;
+        min-height: 100px;
+
+        @include media(w1024) {
+            display: none;
+        }
+
+        &_mobile {
+            display: none;
+
+            @include media(w1024) {
+                display: block;
+            }
+
+            @include media(w768) {
+                background-position: center top;
+                background-size: 90px;
+                font-size: 18px;
+                text-align: center;
+                padding-top: 100px;
+                padding-left: 0;
+            }
+        }
+    }
+
+    &__note-img {
+        background-image: url("../img/sec2-men.svg");
+        background-size: 300px;
+        background-repeat: no-repeat;
+        background-position: center top;
+        border-radius: 0 0 50% 50%;
+        position: relative;
+        height: 420px;
+        width: 380px;
+
+        @include media(w1024) {
+            background-size: 230px;
+            height: 320px;
+            width: 290px;
+        }
+
+        @include media(w768) {
+            margin-top: -60px;
+        }
+    }
+
+    &__info {
+        background-image: url("../img/sec2-flag-bg.png");
+        background-position: left 230px bottom;
+        background-repeat: no-repeat;
+        background-size: calc(100% - 230px);
+        display: flex;
+        align-items: flex-end;
+
+        @include media(w1024) {
+            background-position: left 80px bottom;
+            background-size: calc(100% - 80px);
+        }
+
+        @include media(w768) {
+            background-position: left 100% bottom;
+            background-size: calc(100% - 30%);
+            flex-direction: column;
+            align-items: center;
+            margin-left: -18px;
+            margin-right: -18px;
+        }
+    }
+
+    &__info-item {
+
+        &_img {
+            flex-shrink: 0;
+
+            @include media(w768) {
+                order: 2;
+            }
+        }
+
+        &_text {
+            flex-shrink: 1;
+            padding-left: 30px;
+
+            @include media(w768) {
+                order: 1;
+                text-align: center;
+            }
+        }
+    }
+
+    &__info-img {
+        display: block;
+
+        @include media(w1024) {
+            transform: scaleX(-1);
+            max-width: 280px;
+        }
+    }
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="123px" height="80px" viewBox="0 0 123 80" style="enable-background:new 0 0 123 80;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#BDE285;}
+	.st1{fill:#8BAA41;}
+	.st2{opacity:0.63;fill:#616B62;}
+	.st3{fill:#99CA3B;}
+	.st4{fill:#7B9F33;}
+	.st5{fill:#63A53B;}
+	.st6{fill:#87BC48;}
+	.st7{fill:#7CB23A;}
+	.st8{fill:#6F975B;}
+	.st9{fill:#BADC85;}
+	.st10{fill:#74AF2F;}
+	.st11{fill:#80B543;}
+	.st12{fill:#8FC452;}
+	.st13{fill:#81B642;}
+	.st14{fill:#FAFFD4;}
+	.st15{fill:#BEE288;}
+	.st16{fill:#83BA42;}
+</style>
+<g>
+	<g>
+		<polygon class="st0" points="2,55 33,57 116,68 119,73 28,73 		"/>
+		<polygon class="st1" points="9,60 22,60 27,64 17,65 		"/>
+		<polygon class="st2" points="7,57 28,72 111,71 9,57 		"/>
+		<polygon class="st3" points="2,62 28,80 28,73 2,55 		"/>
+		<polygon class="st4" points="9,60 9,65 17,70 17,65 		"/>
+		<rect x="28" y="73" class="st5" width="91" height="7"/>
+	</g>
+	<g>
+		<polygon class="st0" points="0,44 31,46 114,57 117,62 26,62 		"/>
+		<polygon class="st1" points="7,49 20,49 25,53 15,54 		"/>
+		<polygon class="st2" points="9,45 30,60 113,59 11,45 		"/>
+		<polygon class="st3" points="0,51 26,69 26,62 0,44 		"/>
+		<polygon class="st4" points="7,49 7,54 15,59 15,54 		"/>
+		<rect x="26" y="62" class="st5" width="91" height="7"/>
+	</g>
+	<polygon class="st3" points="6,41 32,59 32,52 6,34 	"/>
+	<polygon class="st4" points="13,39 13,44 21,49 21,44 	"/>
+	<rect x="32" y="52" class="st5" width="91" height="7"/>
+	<polygon class="st0" points="123,52 103,36 6,34 13,38.8 32,52 	"/>
+	<polygon class="st6" points="11,35 33,50 119,51 102,37 101,37 116,50 33,49 12,35 	"/>
+	<ellipse transform="matrix(0.1156 -0.9933 0.9933 0.1156 16.6298 101.3191)" class="st7" cx="65.2" cy="41.3" rx="5.8" ry="15.2"/>
+	<polygon class="st8" points="123,41 123,42 122,41 	"/>
+	<polygon class="st2" points="34,39 13,39 21,44 115,46 107,40 	"/>
+	<path class="st8" d="M26,44l6-17c0,0,57-8,61-9s13-3,13-3l17,27c0,0-14,2-21,2S26,44,26,44z"/>
+	<path class="st9" d="M26,43l6-17c0,0,57-8,61-9s13-3,13-3l17,27c0,0-14,2-21,2S26,43,26,43z"/>
+	<path class="st10" d="M34,27l-5,14h66c0,0,6,0,11-1s12-2,12-2l-13-22l-16,4l-54,7l53-6l17-4l11,20l-10,2l-12,1H30L34,27z"/>
+	<polygon class="st11" points="111,31 106,38 114,36 	"/>
+	<polygon class="st12" points="106,21 104,18 100,19 	"/>
+	<path class="st12" d="M26,43"/>
+	<polygon class="st11" points="34,34 32,39 44,39 	"/>
+	<ellipse class="st13" cx="71" cy="31" rx="12" ry="8"/>
+	<ellipse class="st14" cx="71" cy="31" rx="10" ry="6.7"/>
+	<g>
+		<polygon class="st13" points="65.9,26.8 69.2,36.3 70.2,36.1 67.2,27.7 		"/>
+		<path class="st13" d="M65.9,26.8l4.9-1.1c0,0,3.2,0.4,3.4,1.5c0.3,1.1-3.1,4.2-3.1,4.2L68.2,32l-0.3-1.1l2.9-0.7
+			c0,0,1.7-1.5,1.4-2.6C72,26.5,70.1,27,70.1,27l-2.9,0.7L65.9,26.8z"/>
+		<polygon class="st13" points="66.2,32.5 70.1,31.5 68.9,30.7 65,31.6 		"/>
+		<rect x="66.5" y="32.6" transform="matrix(0.9734 -0.229 0.229 0.9734 -5.7213 17.0309)" class="st13" width="8" height="1.1"/>
+	</g>
+	<path class="st2" d="M27,39c0,0,45-4,50-4s30-6,30-6L96,16c0,0-12,2-16,3s-48,7-48,7L27,39z"/>
+	<path class="st15" d="M8,40l5-23c0,0,19-2,26-4S83,0,83,0l21,23c0,0-50,12-55,13S8,40,8,40z"/>
+	<path class="st16" d="M11,37l4-19c0,0,17-2,21-3S82,2,82,2l17,19L59,32c0,0-12,3-20,3s-28,3-28,3v-2c0,0,31-3,34-3s21-4,21-4l31-9
+		L81,3L38,16l-14,2l-8,1L11,37z"/>
+	<polygon class="st16" points="72,7 85,9 80,4 	"/>
+	<polygon class="st16" points="89,14 83,22 94,19 	"/>
+	<polygon class="st16" points="16,25 17,20 26,19 	"/>
+	<polygon class="st16" points="16,29 13,34 24,33 	"/>
+	<ellipse transform="matrix(0.9918 -0.1281 0.1281 0.9918 -2.4346 6.6331)" class="st13" cx="50.3" cy="22.2" rx="13.5" ry="7"/>
+	<ellipse transform="matrix(0.9918 -0.1281 0.1281 0.9918 -2.4323 6.6495)" class="st14" cx="50.5" cy="22.2" rx="11.8" ry="5.8"/>
+	<polygon class="st13" points="46,18 52,27 53,26 47,18 	"/>
+	<path class="st13" d="M47,18l3-1c0,0,4,0,5,2c0.6,1.3-2,3-2,3l-6,2l-1-1l6-2c0,0,3-1,2-2s-4-1-4-1l-3,1V18z"/>
+	<polygon class="st13" points="48,25 55,22 56,23 48,26 	"/>
+</g>
+</svg>
