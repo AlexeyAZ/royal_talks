@@ -3,13 +3,20 @@
 
     &__subtitle {
         margin-bottom: 1em;
+
+        br {
+            
+            @include media(w1024) {
+                width: 100%;
+            }
+        }
     }
 
     &__decor {
         display: flex;
         align-items: flex-end;
         overflow: hidden;
-        padding-bottom: 120px;
+        padding-bottom: 140px;
         position: relative;
     }
 
@@ -70,10 +77,10 @@
         width: calc(100% + #{$wave-padding} * 2);
 
         &_1 {
-            animation: wave1 300s infinite alternate ease;
+            animation: wave1 300s infinite alternate linear;
             background-image: url("../img/sec1-wave-1.svg");
             height: 80px;
-            bottom: 0;
+            bottom: 20px;
             z-index: 14;
         }
 
@@ -81,7 +88,7 @@
             animation: wave2 6s infinite alternate linear 0.5s;
             background-image: url("../img/sec1-wave-2.svg");
             height: 80px;
-            bottom: 30px;
+            bottom: 50px;
             z-index: 13;
         }
 
@@ -89,7 +96,7 @@
             animation: wave3 8s infinite alternate linear 1s;
             background-image: url("../img/sec1-wave-3.svg");
             height: 80px;
-            bottom: 50px;
+            bottom: 70px;
             z-index: 12;
         }
 
@@ -97,13 +104,22 @@
             animation: wave4 7s infinite alternate linear;
             background-image: url("../img/sec1-wave-4.svg");
             height: 30px;
-            bottom: 110px;
+            bottom: 130px;
+            z-index: 11;
+        }
+
+        &_5 {
+            animation: wave5 350s infinite alternate linear;
+            transform: scaleY(-1);
+            background-image: url("../img/sec1-wave-1.svg");
+            height: 30px;
+            bottom: 0;
             z-index: 11;
         }
     }
 
     &__clouds {
-        animation: clouds 250s infinite alternate ease;
+        animation: clouds 300s infinite alternate linear;
         background-image: url("../img/sec1-clouds.svg");
         background-repeat: repeat-x;
         position: absolute;
@@ -112,6 +128,45 @@
         height: 100px;
         width: 100%;
         z-index: 3;
+    }
+
+    &__bubble {
+        background-color: #fcf2d1;
+        border-radius: 16px;
+        text-align: center;
+        padding: 10px;
+        position: absolute;
+        top: 110px;
+
+        &:before {
+            content: "";
+            background-image: url("../img/bubble-angle.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 92%;
+            height: 10px;
+            width: 15px;
+        }
+
+        &_right {
+            display: none;
+            left: -100px;
+
+            &:before {
+                left: 95%;
+            }
+        }
+
+        &_left {
+            right: -50px;
+
+            &:before {
+                transform: scaleX(-1);
+                top: 91%;
+                right: 92%;
+            }
+        }
     }
 }
 
@@ -200,6 +255,16 @@
 
     100% {
         background-position: 10000px top;
+    }
+}
+
+@keyframes wave5 {
+    0% {
+        background-position: right top;
+    }
+
+    100% {
+        background-position: -10000px top;
     }
 }
 

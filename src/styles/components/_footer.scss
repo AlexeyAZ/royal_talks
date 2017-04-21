@@ -1,11 +1,30 @@
 .footer {
 	background-color: $footer-bg;
-    color: $footer-text;
+    color: white;
     font-size: 14px;
-    padding: 35px 0 30px;
+    padding: 0 0 30px;
 
     @include media(w768) {
-        padding: 25px 0 20px;
+        padding: 0 0 20px;
+    }
+
+    .footer-pc {
+
+        @include media(w1024) {
+            display: none;
+        }
+    }
+
+    .footer-mobile {
+        display: none;
+
+        @include media(w1024) {
+            display: block;
+        }
+
+        @include media(w768) {
+            line-height: 1.6;
+        }
     }
 
     &__container {
@@ -13,64 +32,53 @@
         justify-content: space-between;
         align-items: flex-start;
 
-        @include media(w600) {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
+        &_m {
+            flex-wrap: wrap;
+
+            @include media(w768) {
+                flex-direction: column;
+            }
         }
     }
 
     &__text {
 
-        &_copy {
-
-            @include media(w600) {
-                margin-bottom: 15px;
-            }
+        &_name {
+            white-space: nowrap;
         }
 
     }
     
     &__block {
         display: flex;
+        padding: 0 20px;
 
-        &_contacts {
-            align-items: center;
-            
-            @include media(w1024) {
-                align-items: flex-end;
-            }
-
-            @include media(w600) {
-                align-items: center;
-            }
+        &_info {
+            flex-direction: column;
         }
 
-        @include media(w1024) {
+        &_mail {
+            white-space: nowrap;
+        }
+
+        &_adress {
             flex-direction: column;
+        }
+
+        &_contacts {
+            flex-direction: column;
+            align-items: flex-end;
+            flex-shrink: 0;
         }
     }
 
     &__link {
         transition: $trans;
-        color: $footer-text;
+        color: white;
         text-decoration: none;
 
         &:hover {
             color: white;
-        }
-
-        &_politic {
-            margin-right: 30px;
-
-            @include media(w1024) {
-                margin-right: 0;
-                margin-bottom: 20px;
-            }
-
-            @include media(w600) {
-                margin-bottom: 15px;
-            }
         }
 
         &_getcall {
@@ -82,18 +90,29 @@
             @include media(w1024) {
                 display: inline-block;
             }
+
+            @include media(w768) {
+                padding-top: 0;
+                padding-bottom: 2px;
+            }
+        }
+
+        &_politic {
+            text-decoration: underline;
         }
     }
 
     &__social {
+        display: flex;
+        align-items: center;
 
         @include media(w768) {
-            margin-bottom: 15px;
+            justify-content: center;
         }
     }
 
     &__social-title {
-        margin-bottom: 4px;
+        margin-right: 10px;
     }
 
     &__social-item {
@@ -103,14 +122,9 @@
     }
 
     &__phone {
-        background-image: url("../img/footer-icon-phone.png");
-        background-position: left center;
-        background-repeat: no-repeat;
-        font-size: 26px;
-        margin-right: 30px;
-        padding-left: 30px;
+        font-size: 25px;
         transition: $trans;
-        color: $footer-text;
+        color: white;
         text-decoration: none;
 
         &:hover {
@@ -121,9 +135,47 @@
             font-size: 26px;
             margin-right: 0;
         }
+    }
 
-        @include media(w600) {
-            //padding-left: 0;
+    &__mblock {
+        display: flex;
+
+        &_top {
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 100%;
+
+            @include media(w768) {
+                flex-direction: column;
+                margin-bottom: 0;
+            }
+        }
+
+        &_name {
+            flex-direction: column;
+            padding-right: 20px;
+            width: 40%;
+
+            @include media(w768) {
+                padding-right: 0;
+                width: 100%;
+            }
+        }
+
+        &_adress {
+            flex-direction: column;
+            padding-right: 20px;
+            width: 60%;
+
+            @include media(w768) {
+                padding-right: 0;
+                width: 100%;
+            }
+        }
+
+        @include media(w768) {
+            text-align: center;
         }
     }
 }

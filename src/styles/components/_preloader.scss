@@ -1,0 +1,54 @@
+.show-preloader {
+    overflow: hidden;
+    max-height: 100vh;
+    
+    .preloader {
+        padding-right: 16px;
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.preloader {
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    background-image: $blue-bg;
+    opacity: 0;
+    visibility: hidden;
+    padding-right: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+
+    &__wrap {
+        position: relative;
+        height: 100%;
+    }
+
+    &__spin {
+        animation: preloaderSpinAnimate 2s infinite linear;
+        transform: translate(-50%, -50%);
+        border-top: 4px solid $main-pink;
+        border-right: 4px solid white;
+        border-bottom: 4px solid white;
+        border-left: 4px solid white;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 40px;
+        width: 40px;
+    }
+}
+
+@keyframes preloaderSpinAnimate {
+
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

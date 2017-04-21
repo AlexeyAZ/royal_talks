@@ -14,7 +14,10 @@ html
         link(rel="stylesheet", href="styles/vendor.css")
         link(rel="stylesheet", href="styles/main.css")
         block scripts
-    body
+    body.show-preloader
+        div.preloader
+            div.preloader__wrap
+                div.preloader__spin
         include ../components/svg
         block content
         include ../components/footer

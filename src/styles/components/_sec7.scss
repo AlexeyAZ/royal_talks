@@ -1,0 +1,183 @@
+$sec7-money-border: #e5e5e5;
+$sec7-money-circle-size-pc: 206px;
+
+.sec7 {
+    padding-top: 60px;
+
+    &__container {
+        overflow: hidden;
+        padding-bottom: 60px;
+    }
+
+    &__btn-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            padding-left: 20px;
+            flex-shrink: 1;
+            width: 100%;
+
+            @include media(w1024) {
+                text-align: center;
+                padding-left: 0;
+                margin-bottom: 20px;
+            }
+        }
+
+        a {
+            flex-shrink: 0;
+        }
+
+        @include media(w1024) {
+            flex-direction: column;
+        }
+    }
+
+    &__money {
+        overflow: hidden;
+        margin-bottom: 60px;
+        position: relative;
+
+        @include media(w1024) {
+            display: flex;
+            align-items: center;
+            overflow: visible;
+        }
+
+        @include media(w768) {
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__money-text {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+
+        @include media(w1024) {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            order: 2;
+            padding-left: 20px;
+            position: static;
+            height: auto;
+            width: calc(100% - #{$sec7-money-circle-size-pc});
+        }
+        
+        @include media(w768) {
+            text-align: center;
+            width: auto;
+        }
+    }
+
+    &__money-circle {
+        background-image: url("../img/sec7-img.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 6px solid $sec7-money-border;
+        border-radius: 50%;
+        margin: 0 auto;
+        position: relative;
+        height: $sec7-money-circle-size-pc;
+        width: $sec7-money-circle-size-pc;
+
+        &:before,
+        &:after {
+            content: "";
+            background-color: $sec7-money-border;
+            transform: translateY(-50%);
+            position: absolute;
+            top: 50%;
+            height: 4px;
+            width: 100vw;
+        }
+
+        &:before {
+            left: 100%;
+
+            @include media(w768) {
+                left: 98%;
+                top: 70%;
+            }
+        }
+
+        &:after {
+            right: 100%;
+
+            @include media(w1024) {
+                content: none;
+            }
+
+            @include media(w768) {
+                content: "";
+                right: 98%;
+                top: 70%;
+            }
+        }
+
+        @include media(w1024) {
+            margin: auto;
+            order: 1;
+        }
+
+        @include media(w768) {
+            background-color: white;
+            margin-bottom: 20px;
+            z-index: 1;
+        }
+    }
+
+    &__money-block {
+        width: calc(50% - (#{$sec7-money-circle-size-pc} / 2));
+        white-space: nowrap;
+
+        &_right {
+            text-align: right;
+
+            @include media(w1024) {
+                text-align: left;
+            }
+
+            @include media(w768) {
+                text-align: center;
+            }
+        }
+
+        @include media(w1024) {
+            width: auto;
+        }
+
+        @include media(w768) {
+            white-space: normal;
+        }
+    }
+
+    &__money-big-text {
+        font-size: 56px;
+        font-weight: 800;
+        margin-top: -30px;
+        padding-bottom: 20px;
+
+        @include media(w1024) {
+            margin-top: 10px;
+            padding-bottom: 0;
+        }
+
+        @include media(w768) {
+            font-size: 40px;
+        }
+    }
+
+    &__money-small-text {
+        white-space: normal;
+    }
+}

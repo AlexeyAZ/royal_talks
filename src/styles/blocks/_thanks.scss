@@ -1,31 +1,36 @@
 .thanks {
-    background-image: url("../img/sec1-bg.jpg");
+    background-image: $blue-bg;
     padding-top: 30px;
-    padding-bottom: 160px;
+    //padding-bottom: 160px;
 
     @include media(w1024) {
-        padding-bottom: 200px;
+        //padding-bottom: 200px;
+    }
+
+    &__decor.thanks__decor {
+        padding-bottom: 120px;
+
+        .sec1__wave_1 {
+            bottom: 0;
+        }
+
+        .sec1__wave_2 {
+            bottom: 30px;
+        }
+
+        .sec1__wave_3 {
+            bottom: 50px;
+        }
+
+        .sec1__wave_4 {
+            bottom: 110px;
+        }
     }
 
     &__heading {
-        border-bottom: 2px solid white;
-        font-family: 'Qanelas', sans-serif;
-        font-weight: 800;
-        font-size: 75px;
+        font-weight: bold;
+        font-size: 64px;
         padding-bottom: 0.4em;
-
-        @include media(w1024) {
-            font-size: 50px;
-        }
-
-        @include media(w768) {
-            font-size: 40px;
-        }
-    }
-
-    &__title {
-        font-size: 58px;
-        margin-bottom: 1em;
 
         @include media(w1024) {
             font-size: 40px;
@@ -33,6 +38,19 @@
 
         @include media(w768) {
             font-size: 30px;
+        }
+    }
+
+    &__title {
+        font-size: 36px;
+        margin-bottom: 1em;
+
+        @include media(w1024) {
+            font-size: 30px;
+        }
+
+        @include media(w768) {
+            font-size: 26px;
         }
     }
 
@@ -58,6 +76,14 @@
 
         @include media(w768) {
             flex-direction: column;
+        }
+    }
+
+    &__buttons-download {
+        margin-right: 30px;
+
+        @include media(w768) {
+            margin: 0 0 20px 0;
         }
     }
 

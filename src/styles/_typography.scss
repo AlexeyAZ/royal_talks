@@ -61,6 +61,10 @@ h2 {
 h3 {
     font-size: 52px;
 
+    @include media(w1024) {
+        font-size: 40px;
+    }
+
     @include media(w768) {
         font-size: 31px;
     }

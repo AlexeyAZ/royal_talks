@@ -9,39 +9,88 @@
     <link rel="stylesheet" href="styles/vendor.css">
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body>
+  <body class="show-preloader">
+    <div class="preloader">
+      <div class="preloader__wrap">
+        <div class="preloader__spin"></div>
+      </div>
+    </div>
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;"></svg>
     <section class="sec thanks">
       <header class="header">
         <div class="container header__container color-white">
           <div class="header__item"><a class="header__logo" href="/"><img class="header__logo-img" src="img/header-logo.png" alt=""></a></div>
           <div class="header__item">
-            <p class="text text_xs ta-center header__descr mb0">Бизнес с любовью к детям<br> и доходом до 3 миллионов в год</p>
+            <p class="text text_xs ta-center header__descr mb0">Бизнес с любовью к детям<br> и доходом до 3 миллионов в год</p>
           </div>
           <div class="header__item header__item_contacts"><a class="header__link phone bold" href="tel:88006005030" data-phone="88006005030">8 800 600 50 30</a><a class="header__link link link_getcall js-small-btn" href="">Заказать звонок</a></div>
         </div>
       </header>
-      <div class="container">
+      <div class="container color-white ta-center">
         <p class="thanks__heading"><span id="thanksName"></span>наши</span> менеджеры уже занимаются вашей заявкой</p>
-        <p class="thanks__title">Мы свяжемся с Вами в ближайшее время</p>
-        <div class="thanks__buttons"><a class="btn-round btn-round_download" href="doc/mk.pdf" target="_blank">Открыть презентацию</a><a class="thanks__links-link" href="/index.html">Вернуться на сайт</a></div>
-        <p class="thanks__subtitle">График работы с 9.00 до 23.00 Поэтому, если вы оставили заявку в нерабочее время, мы перезвоним вам на следующий рабочий день</p>
+        <p class="thanks__title">Мы свяжемся с Вами в ближайшее время</p>
+        <p class="thanks__subtitle">График работы с 9.00 до 18.00 Поэтому, если вы оставили заявку в нерабочее время, мы перезвоним вам на следующий рабочий день</p>
+        <div class="thanks__buttons"><a class="btn-round thanks__buttons-download" href="doc/mk.pdf" target="_blank">Скачать презентацию PDF</a><a class="btn-round btn-round_white" href="/index.html">Вернуться на сайт</a></div>
+      </div>
+      <div class="sec1__decor thanks__decor">
+        <div class="sec1__clouds"></div>
+        <div class="sec1__decor-block sec1__decor-block_left">
+          <div class="sec1__bubble sec1__bubble_left">
+            <p class="text text_xs mb0">Hello and<br> welcome!</p>
+          </div><img class="sec1__decor-place sec1__decor-place_left" src="img/sec1-left-place.svg" alt=""><img class="sec1__person sec1__person_women" src="img/sec1-women.svg" alt="">
+        </div>
+        <div class="sec1__decor-block sec1__decor-block_right">
+          <div class="sec1__bubble sec1__bubble_right">
+            <p class="text text_xs mb0">Bonjour!<br> Soyez le bienvenu</p>
+          </div><img class="sec1__decor-place sec1__decor-place_right" src="img/sec1-right-place.svg" alt=""><img class="sec1__person sec1__person_men" src="img/sec1-men.svg" alt="">
+        </div>
+        <div class="sec1__wave sec1__wave_1"></div>
+        <div class="sec1__wave sec1__wave_2"></div>
+        <div class="sec1__wave sec1__wave_3"></div>
+        <div class="sec1__wave sec1__wave_4"></div>
       </div>
     </section>
     <footer class="footer">
-      <div class="container footer__container">
-        <p class="footer__text footer__text_copy">© Пельмения, 2017<br> ресторан, моно-кухня</p>
-        <div class="footer__block"><a class="footer__text footer__link footer__link_politic" href="doc/politic.pdf" target="_blank">Политика<br> конфиденциальности</a>
-          <div class="footer__social">
-            <p class="footer__social-title">Мы в социальных сетях</p>
-            <ul class="footer__social-list">
-              <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://vk.com/club35096702" target="_blank"><i class="fa fa-vk"></i></a></li>
-              <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.facebook.com/pages/%D0%9F%D0%B5%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F/105724159554357" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.tripadvisor.ru/Restaurant_Review-g298507-d3546957-Reviews-Pelmenya-St_Petersburg_Northwestern_District.html" target="_blank"><i class="fa fa-tripadvisor"></i></a></li>
-            </ul>
+      <div class="footer-pc">
+        <div class="container footer__container">
+          <div class="footer__block footer__block_info">
+            <p class="footer__text footer__text_name mb0">© 2017, «Королевские беседы»</p>
+            <div class="footer__social">
+              <p class="footer__social-title mb0">Мы в соц. сетях</p>
+              <ul class="footer__social-list">
+                <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://vk.com/club35096702" target="_blank"><i class="fa fa-vk"></i></a></li>
+                <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.facebook.com/pages/%D0%9F%D0%B5%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F/105724159554357" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.tripadvisor.ru/Restaurant_Review-g298507-d3546957-Reviews-Pelmenya-St_Petersburg_Northwestern_District.html" target="_blank"><i class="fa fa-tripadvisor"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__block footer__block_adress">
+            <p class="mb0">Адрес: г. Казань, ул. Соловецких Юнг 1, 1 этаж</p><a class="footer__text footer__link footer__link_politic" href="doc/politic.pdf" target="_blank">Политика конфиденциальности</a>
+          </div>
+          <div class="footer__block footer__block_mail">e-mail:<a class="footer__link" href="mailto:info@royalcours.com">info@royalcours.com</a></div>
+          <div class="footer__block footer__block_contacts"><a class="footer__phone" href="tel:89218450907" data-phone="89218450907">+7 921 845-09-07</a><a class="footer__link footer__link_getcall js-small-btn" href="">Заказать звонок</a></div>
+        </div>
+      </div>
+      <div class="footer-mobile">
+        <div class="container footer__container footer__container_m">
+          <div class="footer__mblock footer__mblock_top"><a class="footer__phone" href="tel:89218450907" data-phone="89218450907">+7 921 845-09-07</a><a class="footer__link footer__link_getcall js-small-btn" href="">Заказать звонок</a>
+            <p class="mb0">e-mail:<a class="footer__link" href="mailto:info@royalcours.com">info@royalcours.com</a></p>
+          </div>
+          <div class="footer__mblock footer__mblock_name">
+            <p class="footer__text footer__text_name mb0">© 2017, «Королевские беседы»</p>
+            <div class="footer__social">
+              <p class="footer__social-title mb0">Мы в соц. сетях</p>
+              <ul class="footer__social-list">
+                <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://vk.com/club35096702" target="_blank"><i class="fa fa-vk"></i></a></li>
+                <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.facebook.com/pages/%D0%9F%D0%B5%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F/105724159554357" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.tripadvisor.ru/Restaurant_Review-g298507-d3546957-Reviews-Pelmenya-St_Petersburg_Northwestern_District.html" target="_blank"><i class="fa fa-tripadvisor"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__mblock footer__mblock_adress">
+            <p class="mb0">Адрес: г. Казань, ул. Соловецких Юнг 1, 1 этаж</p><a class="footer__text footer__link footer__link_politic" href="doc/politic.pdf" target="_blank">Политика конфиденциальности</a>
           </div>
         </div>
-        <div class="footer__block footer__block_contacts"><a class="footer__phone" href="tel:89218450907" data-phone="89218450907">+7(921)845-09-07</a><a class="footer__link footer__link_getcall js-small-btn" href="">Заказать звонок</a></div>
       </div>
     </footer>
     <script src="scripts/vendor.js"></script>

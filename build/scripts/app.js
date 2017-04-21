@@ -1,5 +1,34 @@
 $(function () {
 
+    setInterval(function () {
+        $(".sec1__bubble_left").fadeIn(function () {
+            setTimeout(function () {
+                $(".sec1__bubble_left").fadeOut(function () {
+                    setTimeout(function () {
+                        $(".sec1__bubble_right").fadeIn(function () {
+                            setTimeout(function () {
+                                $(".sec1__bubble_right").fadeOut();
+                            }, 2000);
+                        });
+                    }, 1000);
+                });
+            }, 2000);
+        });
+    }, 7000);
+
+    // setTimeout(function() {
+    //     setInterval(function(){
+    //         $(".sec1__bubble_right").fadeIn(function() {
+    //             setTimeout(function() {
+    //                 $(".sec1__bubble_right").fadeOut();
+    //             }, 2000);
+    //         });
+    //     }, 5000);
+    // }, 2500);
+
+
+    $(".sec4__gallery").slick();
+
     if ($('input[type="range"]').length) {
         $('input[type="range"]').rangeslider({
             polyfill: false
@@ -151,5 +180,9 @@ $(function () {
     if ($("#thanksName").length) {
         $("#thanksName").text(localStorage.getItem("landclientname"));
     };
+
+    $(window).on("load", function () {
+        body.removeClass("show-preloader");
+    });
 });
 //# sourceMappingURL=app.js.map

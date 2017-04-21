@@ -9,17 +9,22 @@
     <link rel="stylesheet" href="styles/vendor.css">
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body>
+  <body class="show-preloader">
+    <div class="preloader">
+      <div class="preloader__wrap">
+        <div class="preloader__spin"></div>
+      </div>
+    </div>
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;"></svg>
     <div class="form-wrap form-wrap_small">
       <div class="form-container" id="smallFormContainer">
         <div class="form__close"></div>
-        <p class="form__heading">Оставьте заявку на презентацию франшизы</p>
+        <p class="form__heading">Оставьте заявку на презентацию франшизы</p>
         <form class="form" id="smallForm" data-next="#bigForm">
-          <input class="form__input" type="text" name="name" placeholder="Ваше имя" required="">
-          <input class="form__input" type="text" name="phone" placeholder="Ваш телефон" required="">
-          <input class="form__input" type="email" name="email" placeholder="Ваш email" required="">
-          <button class="btn-round form__btn form__btn_size js-big-btn">Скачать</button>
+          <input class="input form__input" type="text" name="name" placeholder="Ваше имя" required="">
+          <input class="input form__input" type="text" name="phone" placeholder="Ваш телефон" required="">
+          <input class="input form__input" type="email" name="email" placeholder="Ваш email" required="">
+          <button class="btn-round form__btn js-big-btn">Скачать</button>
         </form>
       </div>
     </div>
@@ -27,32 +32,32 @@
       <div class="form-container" id="bigFormContainer">
         <div class="form__close"></div>
         <p class="form__title">Спасибо!</p>
-        <p class="form__descr">В ближайшее время мы обработаем Вашу заявку. Для того, чтобы наш специалист мог максимально подробно ответить на все Ваши вопросы, заполните, пожалуйста, следующую форму. Заранее благодарим</p>
+        <p class="form__descr">В ближайшее время мы обработаем Вашу заявку. Для того, чтобы наш специалист мог максимально подробно ответить на все Ваши вопросы, заполните, пожалуйста, следующую форму. Заранее благодарим</p>
         <form class="form" id="bigForm">
           <input class="js-hidden-name" type="hidden" name="name1">
           <input class="js-hidden-phone" type="hidden" name="phone1">
           <input class="js-hidden-phone" type="hidden" name="email1">
           <label class="form__label"><span>Введите Ваш город</span>
-            <input class="form__input" type="text" name="city" placeholder="" required="">
+            <input class="input form__input" type="text" name="city" placeholder="" required="">
           </label>
           <label class="form__label"><span>Введите Ваш возраст</span>
-            <input class="form__input" type="text" name="age" placeholder="" required="">
+            <input class="input form__input" type="text" name="age" placeholder="" required="">
           </label>
           <label class="form__label"><span>Наличие бизнеса / Опыт бизнеса</span>
-            <select class="form__select" name="business">
+            <select class="select form__select" name="business">
               <option value="yes">Да</option>
               <option value="no">Нет</option>
             </select>
           </label>
           <label class="form__label"><span>Объем планируемых инвестиций</span>
-            <select class="form__select" name="volume">
-              <option value="100 000 - 250 000">100 000 - 250 000 рублей</option>
-              <option value="250 000 - 500 000">250 000 - 500 000 рублей</option>
-              <option value="500 000 - 750 000">500 000 - 750 000 рублей</option>
-              <option value="750 000 - 1 000 000">750 000 - 1 000 000 рублей</option>
-              <option value="1 000 000 - 1 500 000">1 000 000 - 1 500 000 рублей</option>
-              <option value="1 500 000 - 3 000 000">1 500 000 - 3 000 000 рублей</option>
-              <option value="3 000 000">Более 3 000 000 рублей</option>
+            <select class="select form__select" name="volume">
+              <option value="100 000 - 250 000">100 000 — 250 000 рублей</option>
+              <option value="250 000 - 500 000">250 000 — 500 000 рублей</option>
+              <option value="500 000 - 750 000">500 000 — 750 000 рублей</option>
+              <option value="750 000 - 1 000 000">750 000 — 1 000 000 рублей</option>
+              <option value="1 000 000 - 1 500 000">1 000 000 — 1 500 000 рублей</option>
+              <option value="1 500 000 - 3 000 000">1 500 000 — 3 000 000 рублей</option>
+              <option value="3 000 000">Более 3 000 000 рублей</option>
             </select>
           </label>
           <button class="btn-round form__btn form__btn_center">Получить предложение</button>
@@ -64,23 +69,32 @@
         <div class="container header__container color-white">
           <div class="header__item"><a class="header__logo" href="/"><img class="header__logo-img" src="img/header-logo.png" alt=""></a></div>
           <div class="header__item">
-            <p class="text text_xs ta-center header__descr mb0">Бизнес с любовью к детям<br> и доходом до 3 миллионов в год</p>
+            <p class="text text_xs ta-center header__descr mb0">Бизнес с любовью к детям<br> и доходом до 3 миллионов в год</p>
           </div>
           <div class="header__item header__item_contacts"><a class="header__link phone bold" href="tel:88006005030" data-phone="88006005030">8 800 600 50 30</a><a class="header__link link link_getcall js-small-btn" href="">Заказать звонок</a></div>
         </div>
       </header>
       <div class="container ta-center color-white">
         <h2>Франшиза детской языковой школы</h2>
-        <p class="text text_xl sec1__subtitle">Зарабатывайте <span class="selected">3 млн рублей в год</span> на обучении детей английскому и французскому!</p><a class="btn-round js-small-btn" href="">Скачать презентацию PDF</a>
+        <p class="text text_xl sec1__subtitle">Зарабатывайте <span class="selected">3 млн рублей в год</span> на обучении<br> детей английскому и французскому!</p><a class="btn-round js-small-btn" href="">Скачать презентацию PDF</a>
       </div>
       <div class="sec1__decor">
         <div class="sec1__clouds"></div>
-        <div class="sec1__decor-block sec1__decor-block_left"><img class="sec1__decor-place sec1__decor-place_left" src="img/sec1-left-place.svg" alt=""><img class="sec1__person sec1__person_women" src="img/sec1-women.svg" alt=""></div>
-        <div class="sec1__decor-block sec1__decor-block_right"><img class="sec1__decor-place sec1__decor-place_right" src="img/sec1-right-place.svg" alt=""><img class="sec1__person sec1__person_men" src="img/sec1-men.svg" alt=""></div>
+        <div class="sec1__decor-block sec1__decor-block_left">
+          <div class="sec1__bubble sec1__bubble_left">
+            <p class="text text_xs mb0">Hello and<br> welcome!</p>
+          </div><img class="sec1__decor-place sec1__decor-place_left" src="img/sec1-left-place.svg" alt=""><img class="sec1__person sec1__person_women" src="img/sec1-women.svg" alt="">
+        </div>
+        <div class="sec1__decor-block sec1__decor-block_right">
+          <div class="sec1__bubble sec1__bubble_right">
+            <p class="text text_xs mb0">Bonjour!<br> Soyez le bienvenu</p>
+          </div><img class="sec1__decor-place sec1__decor-place_right" src="img/sec1-right-place.svg" alt=""><img class="sec1__person sec1__person_men" src="img/sec1-men.svg" alt="">
+        </div>
         <div class="sec1__wave sec1__wave_1"></div>
         <div class="sec1__wave sec1__wave_2"></div>
         <div class="sec1__wave sec1__wave_3"></div>
         <div class="sec1__wave sec1__wave_4"></div>
+        <div class="sec1__wave sec1__wave_5"></div>
       </div>
     </section>
     <section class="sec sec2">
@@ -89,106 +103,227 @@
           <div class="sec2__note">
             <div class="sec2__note-item sec2__note-item_text">
               <h3 class="color-pink ebold">Родители регулярно инвестируют</h3>
-              <p class="text text_l color-brown bold mb1">в образование своих детей</p>
-              <p class="text text_s mb2">Мудрые родители знают: в раннем возрасте ребёнок впитывает знания, как губка. И важно дать ему доступ к знаниям в комфортной среде.</p>
-              <p class="text text_m sec2__note-boxes bold mb0">Языковые и развивающие  центры с индивидуальным подходом к детям – лучший выход для заботливых родителей</p>
+              <p class="text text_l color-brown bold mb1">в образование своих детей</p>
+              <p class="text text_s mb2">Мудрые родители знают: в раннем возрасте ребёнок впитывает знания, как губка. И важно дать ему доступ к знаниям в комфортной среде.</p>
+              <p class="text text_m sec2__note-boxes bold mb0">Языковые и развивающие центры с индивидуальным подходом к детям — лучший выход для заботливых родителей</p>
             </div>
             <div class="sec2__note-item sec2__note-item_img">
               <div class="sec2__note-img"></div>
             </div>
           </div>
-          <p class="text text_m sec2__note-boxes sec2__note-boxes_mobile bold mb0">Языковые и развивающие  центры с индивидуальным подходом к детям – лучший выход для заботливых родителей</p>
+          <p class="text text_m sec2__note-boxes sec2__note-boxes_mobile bold mb0">Языковые и развивающие центры с индивидуальным подходом к детям — лучший выход для заботливых родителей</p>
         </div>
       </div>
       <div class="container">
         <div class="sec2__info">
           <div class="sec2__info-item sec2__info-item_img"><img class="sec2__info-img" src="img/sec2-flag.png" alt=""></div>
           <div class="sec2__info-item sec2__info-item_text">
-            <p class="text text_l color-gold bold">В академии развития «Королевские беседы»</p>
-            <h3 class="color-white ebold">Дети учат два иностранных языка одновременно</h3>
+            <p class="text text_l color-gold bold">В академии развития «Королевские беседы»</p>
+            <h3 class="color-white ebold mb0">Дети учат два иностранных языка одновременно</h3>
           </div>
         </div>
       </div>
     </section>
     <section class="sec sec3">
       <div class="container ta-center">
-        <p class="text text_xxl color-pink bold">Королевские беседы – это параллельное изучение английского и французского с раннего детства, и практика языка за рубежом</p>
-        <p class="text text_l color-brown bold mb1 sec3__subtitle">Обучение у нас дарит детям возможность получить образование в лучших вузах мира!</p>
+        <p class="text text_xxl color-pink bold">Королевские беседы — это параллельное изучение английского и французского с раннего детства, и практика языка за рубежом</p>
+        <p class="text text_l color-brown bold mb1 sec3__subtitle">Обучение у нас дарит детям возможность получить образование в лучших вузах мира!</p>
         <div class="sec3__list">
           <div class="sec3__list-item">
             <div class="sec3__list-img"><img src="img/sec3-img1.png" alt=""></div>
             <div class="sec3__list-text">
-              <p class="text text_xs">Занятия проходят в группах по 6-9 человек – мы работаем как с дошкольниками, так и со школьниками</p>
+              <p class="text text_xs">Занятия проходят в группах по 6-9 человек — мы работаем как с дошкольниками, так и со школьниками</p>
             </div>
           </div>
           <div class="sec3__list-item">
             <div class="sec3__list-img"><img src="img/sec3-img2.png" alt=""></div>
             <div class="sec3__list-text">
-              <p class="text text_xs">Программа состоит из 2 циклов и 6 ступеней развития</p>
+              <p class="text text_xs">Программа состоит из 2 циклов и 6 ступеней развития</p>
             </div>
           </div>
           <div class="sec3__list-item">
             <div class="sec3__list-img"><img src="img/sec3-img3.png" alt=""></div>
             <div class="sec3__list-text">
-              <p class="text text_xs">Обучение основано на активной практике: в классе, в летних лагерях и на выезде за границу</p>
+              <p class="text text_xs">Обучение основано на активной практике: в классе, в летних лагерях и на выезде за границу</p>
             </div>
           </div>
           <div class="sec3__list-item">
             <div class="sec3__list-img"><img src="img/sec3-img4.png" alt=""></div>
             <div class="sec3__list-text">
-              <p class="text text_xs">Обучение одновременно двум  языкам оплачивается в двойном размере и приносит двойную выгоду</p>
+              <p class="text text_xs">Обучение одновременно двум языкам оплачивается в двойном размере и приносит двойную выгоду</p>
             </div>
           </div>
           <div class="sec3__list-item">
             <div class="sec3__list-img"><img src="img/sec3-img5.png" alt=""></div>
             <div class="sec3__list-text">
-              <p class="text text_xs">Отдать ребёнка на обучение к нам может почти каждая семья: средний чек равен 3 200 рублей/месяц!</p>
+              <p class="text text_xs">Отдать ребёнка на обучение к нам может почти каждая семья: средний чек равен 3 200 рублей/месяц!</p>
             </div>
           </div>
           <div class="sec3__list-item">
             <div class="sec3__list-img"><img src="img/sec3-img6.png" alt=""></div>
             <div class="sec3__list-text">
-              <p class="text text_xs">Это позволяет нам зарабатывать в среднем 237 000 рублей ежемесячно с каждого центра</p>
+              <p class="text text_xs">Это позволяет нам зарабатывать в среднем 237 000 рублей ежемесячно с каждого центра</p>
             </div>
           </div>
         </div>
         <div class="sec3__btn-block">
-          <p class="text text_l sec3__btn-block-text mb0 color-pink bold">Узнайте больше из нашей презентации</p><a class="btn-round js-small-btn sec3__btn" href="">Скачать презентацию PDF</a>
+          <p class="text text_l sec3__btn-block-text mb0 color-pink bold">Узнайте больше из нашей презентации</p><a class="btn-round js-small-btn sec3__btn" href="">Скачать презентацию PDF</a>
         </div>
       </div>
     </section>
     <section class="sec sec4">
-      <div class="container">
-        <div class="bottom-form-container" id="bottomFormContainer">
-          <form class="bottom-form" data-next="#bigForm" id="bottomForm">
-            <label class="bottom-form__label">
-              <input class="input input_city" type="text" name="city" placeholder="Ваш город" required>
-            </label>
-            <label class="bottom-form__label">
-              <input class="input input_phone" type="text" name="phone" placeholder="Телефон" required>
-            </label>
-            <label class="bottom-form__label">
-              <input class="input" type="email" name="email" placeholder="E-mail" required>
-            </label>
-            <button class="btn-round bottom-form__btn">Проверить</button>
-          </form>
+      <div class="container color-white sec4__container">
+        <h3 class="ebold ta-center mb1">Если вы осознаёте ценность достойного образования ребёнка — станьте нашим партнёром!</h3>
+        <p class="text text_l bold mb1 sec4__subtitle-mobile">Откройте свою детскую академию развития под брендом «Королевские беседы» — подарите детям вашего города шанс стать успешными в будущем</p>
+        <div class="sec4__row">
+          <div class="sec4__col sec4__col_text">
+            <p class="text text_l bold mb1 sec4__subtitle">Откройте свою детскую академию развития под брендом «Королевские беседы» — подарите детям вашего города шанс стать успешными в будущем</p>
+            <p class="text text_s mb2">Мы поможем подобрать помещение, нанять преподавателей и привлечь внимание родителей уже на второй месяц после старта!</p><a class="btn-round btn-round_white js-small-btn sec4__btn" href="">Узнать подробнее</a>
+          </div>
+          <div class="sec4__col sec4__col_gallery">
+            <div class="sec4__gallery-wrap">
+              <div class="sec4__gallery">
+                <div class="sec4__gallery-item"><img class="sec4__gallery-img" src="img/sec4-gallery-img1.jpg" alt=""></div>
+                <div class="sec4__gallery-item"><img class="sec4__gallery-img" src="img/sec4-gallery-img1.jpg" alt=""></div>
+              </div>
+              <div class="sec4__gallery-note">
+                <p class="text text_s mb0">Посмотрите как будет выглядеть ваш бизнес или ваш детский центр </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <footer class="footer">
-      <div class="container footer__container">
-        <p class="footer__text footer__text_copy">© Пельмения, 2017<br> ресторан, моно-кухня</p>
-        <div class="footer__block"><a class="footer__text footer__link footer__link_politic" href="doc/politic.pdf" target="_blank">Политика<br> конфиденциальности</a>
-          <div class="footer__social">
-            <p class="footer__social-title">Мы в социальных сетях</p>
-            <ul class="footer__social-list">
-              <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://vk.com/club35096702" target="_blank"><i class="fa fa-vk"></i></a></li>
-              <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.facebook.com/pages/%D0%9F%D0%B5%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F/105724159554357" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.tripadvisor.ru/Restaurant_Review-g298507-d3546957-Reviews-Pelmenya-St_Petersburg_Northwestern_District.html" target="_blank"><i class="fa fa-tripadvisor"></i></a></li>
-            </ul>
+    <section class="sec sec5">
+      <div class="container">
+        <h3 class="ebold ta-center mb1 color-pink">С нашей франшизой вы получаете всё для открытия успешного бизнеса</h3>
+        <div class="sec5__list">
+          <div class="sec5__list-item"><img class="sec5__list-img" src="img/sec5-img1.png" alt="">
+            <p class="text text_xs sec5__list-text">Готовую бизнес модель, основанную на стандартах качества</p>
+          </div>
+          <div class="sec5__list-item"><img class="sec5__list-img" src="img/sec5-img2.png" alt="">
+            <p class="text text_xs sec5__list-text">Руководство для франчайзи с пошаговым описанием бизнес процессов</p>
+          </div>
+          <div class="sec5__list-item"><img class="sec5__list-img" src="img/sec5-img3.png" alt="">
+            <p class="text text_xs sec5__list-text">Подключение к единому порталу, и CRM</p>
+          </div>
+          <div class="sec5__list-item"><img class="sec5__list-img" src="img/sec5-img4.png" alt="">
+            <p class="text text_xs sec5__list-text">Онлайн-доступ 24/7 к базе рабочих документов</p>
+          </div>
+          <div class="sec5__list-item"><img class="sec5__list-img" src="img/sec5-img5.png" alt="">
+            <p class="text text_xs sec5__list-text">Кейсы авторских методик и развивающих программ по всем направлениям</p>
+          </div>
+          <div class="sec5__list-item"><img class="sec5__list-img" src="img/sec5-img6.png" alt="">
+            <p class="text text_xs sec5__list-text">Методическое сопровождение сотрудников, система контроля качества результатов</p>
+          </div>
+          <div class="sec5__list-item"><img class="sec5__list-img" src="img/sec5-img7.png" alt="">
+            <p class="text text_xs sec5__list-text">Полный набор рекламных материалов</p>
+          </div>
+          <div class="sec5__list-item"><img class="sec5__list-img" src="img/sec5-img8.png" alt="">
+            <p class="text text_xs sec5__list-text">Скайп консультации и поддержка startup-менеджера</p>
           </div>
         </div>
-        <div class="footer__block footer__block_contacts"><a class="footer__phone" href="tel:89218450907" data-phone="89218450907">+7(921)845-09-07</a><a class="footer__link footer__link_getcall js-small-btn" href="">Заказать звонок</a></div>
+      </div>
+    </section>
+    <section class="sec sec6">
+      <div class="container sec6__container">
+        <p class="text text_l color-pink bold mb0">Следуйте нашим рекомендациям, и открывайте свой центр детского развития уже через 5 недель!</p><a class="btn-round js-small-btn sec4__btn" href="">Получить рекомендации</a>
+      </div>
+    </section>
+    <section class="sec sec7">
+      <div class="container sec7__container">
+        <h3 class="ebold ta-center mb1 color-pink ta-center">Инвестируя в образование — вы получаете долгосрочный источник прибыли</h3>
+        <p class="text text_l color-brown bold mb1 ta-center">Для старта вам потребуется:</p>
+        <div class="sec7__money">
+          <div class="sec7__money-text">
+            <div class="sec7__money-block sec7__money-block_left">
+              <p class="sec7__money-big-text mb0">500 000 руб.</p>
+              <p class="sec7__money-small-text">на приобретение франшизы «Королевские беседы»</p>
+            </div>
+            <div class="sec7__money-block sec7__money-block_right">
+              <p class="sec7__money-big-text mb0">450 000 руб.</p>
+              <p class="sec7__money-small-text">на ремонт помещения, рекламу и мелкие расходы</p>
+            </div>
+          </div>
+          <div class="sec7__money-circle"></div>
+        </div>
+        <div class="sec7__btn-block">
+          <p class="text text_m mb0">Используйте наш опыт по-максимуму, и окупайте вложения уже на восьмой месяц работы!</p><a class="btn-round js-small-btn sec3__btn" href="">Получить расчет инвестиций</a>
+        </div>
+      </div>
+    </section>
+    <section class="sec sec8">
+      <div class="container">
+        <h2 class="color-white ta-center">Если вы любите детей, и мечтаете о бизнесе — дерзайте, у вас получится!</h2>
+        <p class="text text_xl sec1__subtitle color-white ta-center mb2">Заработайте <span class="selected">3 млн рублей</span> на дополнительном образовании уже в первый год работы</p>
+        <div class="bottom-form-container" id="bottomFormContainer">
+          <p class="text text_xl ta-center mb2">Проверьте, актуальна ли наша франшиза для вашего города?</p>
+          <form class="bottom-form" data-next="#bigForm" id="bottomForm">
+            <label class="bottom-form__label">
+              <input class="input bottom-form__input" type="text" name="city" placeholder="Ваш город" required>
+            </label>
+            <label class="bottom-form__label">
+              <input class="input bottom-form__input" type="text" name="phone" placeholder="Телефон" required>
+            </label>
+            <label class="bottom-form__label">
+              <input class="input bottom-form__input" type="email" name="email" placeholder="E-mail" required>
+            </label>
+            <label class="bottom-form__label">
+              <button class="btn-round bottom-form__btn">Проверить</button>
+            </label>
+          </form>
+        </div>
+      </div>
+      <div class="sec8__decor">
+        <div class="sec1__clouds"></div>
+        <div class="sec8__decor-block"><img class="sec8__decor-place" src="img/sec8-bg.svg" alt=""></div>
+        <div class="sec1__wave sec1__wave_1"></div>
+        <div class="sec1__wave sec1__wave_2"></div>
+        <div class="sec1__wave sec1__wave_3"></div>
+        <div class="sec1__wave sec1__wave_4"></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer-pc">
+        <div class="container footer__container">
+          <div class="footer__block footer__block_info">
+            <p class="footer__text footer__text_name mb0">© 2017, «Королевские беседы»</p>
+            <div class="footer__social">
+              <p class="footer__social-title mb0">Мы в соц. сетях</p>
+              <ul class="footer__social-list">
+                <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://vk.com/club35096702" target="_blank"><i class="fa fa-vk"></i></a></li>
+                <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.facebook.com/pages/%D0%9F%D0%B5%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F/105724159554357" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.tripadvisor.ru/Restaurant_Review-g298507-d3546957-Reviews-Pelmenya-St_Petersburg_Northwestern_District.html" target="_blank"><i class="fa fa-tripadvisor"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__block footer__block_adress">
+            <p class="mb0">Адрес: г. Казань, ул. Соловецких Юнг 1, 1 этаж</p><a class="footer__text footer__link footer__link_politic" href="doc/politic.pdf" target="_blank">Политика конфиденциальности</a>
+          </div>
+          <div class="footer__block footer__block_mail">e-mail:<a class="footer__link" href="mailto:info@royalcours.com">info@royalcours.com</a></div>
+          <div class="footer__block footer__block_contacts"><a class="footer__phone" href="tel:89218450907" data-phone="89218450907">+7 921 845-09-07</a><a class="footer__link footer__link_getcall js-small-btn" href="">Заказать звонок</a></div>
+        </div>
+      </div>
+      <div class="footer-mobile">
+        <div class="container footer__container footer__container_m">
+          <div class="footer__mblock footer__mblock_top"><a class="footer__phone" href="tel:89218450907" data-phone="89218450907">+7 921 845-09-07</a><a class="footer__link footer__link_getcall js-small-btn" href="">Заказать звонок</a>
+            <p class="mb0">e-mail:<a class="footer__link" href="mailto:info@royalcours.com">info@royalcours.com</a></p>
+          </div>
+          <div class="footer__mblock footer__mblock_name">
+            <p class="footer__text footer__text_name mb0">© 2017, «Королевские беседы»</p>
+            <div class="footer__social">
+              <p class="footer__social-title mb0">Мы в соц. сетях</p>
+              <ul class="footer__social-list">
+                <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://vk.com/club35096702" target="_blank"><i class="fa fa-vk"></i></a></li>
+                <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.facebook.com/pages/%D0%9F%D0%B5%D0%BB%D1%8C%D0%BC%D0%B5%D0%BD%D0%B8%D1%8F/105724159554357" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li class="footer__social-item"><a class="footer__link footer__social-link" href="https://www.tripadvisor.ru/Restaurant_Review-g298507-d3546957-Reviews-Pelmenya-St_Petersburg_Northwestern_District.html" target="_blank"><i class="fa fa-tripadvisor"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__mblock footer__mblock_adress">
+            <p class="mb0">Адрес: г. Казань, ул. Соловецких Юнг 1, 1 этаж</p><a class="footer__text footer__link footer__link_politic" href="doc/politic.pdf" target="_blank">Политика конфиденциальности</a>
+          </div>
+        </div>
       </div>
     </footer>
     <script src="scripts/vendor.js"></script>

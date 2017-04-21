@@ -6,15 +6,33 @@ block vars
 block content
     section.sec.thanks
         include components/header
-        div.container
+        div.container.color-white.ta-center
             p.thanks__heading.
                 <span id="thanksName"></span>наши</span> менеджеры уже занимаются вашей заявкой
             p.thanks__title.
                 Мы свяжемся с Вами в ближайшее время
-            div.thanks__buttons
-                a(href="doc/mk.pdf" target="_blank").btn-round.btn-round_download.
-                    Открыть презентацию
-                a(href="/index.html").thanks__links-link.
-                    Вернуться на сайт
             p.thanks__subtitle.
-                График работы с 9.00 до 23.00 Поэтому, если вы оставили заявку в нерабочее время, мы перезвоним вам на следующий рабочий день
+                График работы с 9.00 до 18.00 Поэтому, если вы оставили заявку в нерабочее время, мы перезвоним вам на следующий рабочий день
+            div.thanks__buttons
+                a(href="doc/mk.pdf" target="_blank").btn-round.thanks__buttons-download.
+                    Скачать презентацию PDF
+                a(href="/index.html").btn-round.btn-round_white.
+                    Вернуться на сайт
+        div.sec1__decor.thanks__decor
+            div.sec1__clouds
+            div.sec1__decor-block.sec1__decor-block_left
+                div.sec1__bubble.sec1__bubble_left
+                    p.text.text_xs.mb0.
+                        Hello and<br> welcome!
+                img(src="img/sec1-left-place.svg", alt="").sec1__decor-place.sec1__decor-place_left
+                img(src="img/sec1-women.svg", alt="").sec1__person.sec1__person_women
+            div.sec1__decor-block.sec1__decor-block_right
+                div.sec1__bubble.sec1__bubble_right
+                    p.text.text_xs.mb0.
+                        Bonjour!<br> Soyez le bienvenu
+                img(src="img/sec1-right-place.svg", alt="").sec1__decor-place.sec1__decor-place_right
+                img(src="img/sec1-men.svg", alt="").sec1__person.sec1__person_men
+            div.sec1__wave.sec1__wave_1
+            div.sec1__wave.sec1__wave_2
+            div.sec1__wave.sec1__wave_3
+            div.sec1__wave.sec1__wave_4

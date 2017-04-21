@@ -15,6 +15,7 @@ a {
 }
 
 .btn-round {
+    transition: $trans;
     background-color: $main-pink;
     border-radius: 40px;
     border: none;
@@ -29,7 +30,9 @@ a {
     height: 80px;
 
     &:hover {
-        animation: btnAnimRed 0.8s 0s ease-out 1;
+        //animation: btnAnimRed 0.8s 0s ease-out 1;
+        background-color: $btn-hover;
+        border-color: $btn-border-hover;
     }
 
     @include media (w1024) {
@@ -47,10 +50,14 @@ a {
 
     &_white {
         background-color: white;
-        color: black;
+        border-color: #c4c4c4;
+        color: $main-pink;
 
         &:hover {
-            animation: btnAnimWhite 0.8s 0s ease-out 1;
+            //animation: btnAnimWhite 0.8s 0s ease-out 1;
+            background-color: $main-pink;
+            border-color: #bd0665;
+            color: white;
         }
     }
 
@@ -63,7 +70,7 @@ a {
         position: relative;
 
         &:after {
-            content: "PDF, 20Mb";
+            content: "PDF, 15Mb";
             font-size: 30px;
             position: absolute;
             left: calc(100% + 20px);

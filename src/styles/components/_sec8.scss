@@ -1,0 +1,35 @@
+.sec8 {
+    background-image: $blue-bg;
+    padding-top: 60px;
+
+    &__decor {
+        overflow: hidden;
+        position: relative;
+        margin-top: -340px;
+        padding-bottom: 50px;
+
+        .sec1__wave_1 {
+            bottom: 0;
+        }
+
+        .sec1__wave_2 {
+            bottom: 30px;
+        }
+
+        .sec1__wave_3 {
+            bottom: 50px;
+        }
+
+        .sec1__wave_4 {
+            bottom: 110px;
+        }
+    }
+
+    &__decor-place {
+        min-width: calc(100% + 20px);
+
+        @include media(w768) {
+            margin-left: -500px;
+        }
+    }
+}
