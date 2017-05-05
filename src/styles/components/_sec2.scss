@@ -88,6 +88,7 @@
         padding-top: 20px;
         padding-left: 120px;
         min-height: 100px;
+        max-width: 625px;
 
         @include media(w1024) {
             display: none;
@@ -95,6 +96,7 @@
 
         &_mobile {
             display: none;
+            max-width: none;
 
             @include media(w1024) {
                 display: block;

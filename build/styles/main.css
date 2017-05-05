@@ -3397,12 +3397,14 @@ a {
     background-repeat: no-repeat;
     padding-top: 20px;
     padding-left: 120px;
-    min-height: 100px; }
+    min-height: 100px;
+    max-width: 625px; }
     @media only screen and (max-width: 1024px) {
       .sec2__note-boxes {
         display: none; } }
     .sec2__note-boxes_mobile {
-      display: none; }
+      display: none;
+      max-width: none; }
       @media only screen and (max-width: 1024px) {
         .sec2__note-boxes_mobile {
           display: block; } }
