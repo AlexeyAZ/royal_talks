@@ -1,11 +1,11 @@
 <?php
-$sendto = "alex_z@franch5.ru, zvnfranch5@yandex.ru, franchaizing-5@yandex.ru, royalcours@yandex.ru";
+$sendto = "alex_z@franch5.ru, zvnfranch5@yandex.ru, franchaizing-5@yandex.ru, royalcours@yandex.ru, franch@razvitie-rebenka-kazan.ru";
 $phone = nl2br($_POST['phone']);
 $name = nl2br($_POST['name']);
 $email = nl2br($_POST['email']);
 $city = nl2br($_POST['city1']);
 
-$content = "Заявка с сайта ";
+$content = "Заявка с сайта Королевские беседы";
 // Формирование заголовка письма
 $subject  = $content;
 $headers  = "From: no-reply@no-reply.ru" . "\r\n";
